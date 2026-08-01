@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTRA Connect</title>
+</head>
+<body style="margin:0;font-family:Arial,sans-serif;background:#111;color:white;">
+
+  <header style="background:black;padding:20px;text-align:center;border-bottom:2px solid gold;">
+    <h1 style="color:gold;">ASTRA Connect</h1>
+    <p>Trusted Professionals. One Tap Away.</p>
+  </header>
+
+  <section style="padding:40px;text-align:center;">
+    <h2>Find Trusted Professionals in Lagos</h2>
+    <p>Book verified plumbers, electricians, cleaners, mechanics, painters and more.</p>
+
+    <button style="padding:15px 30px;background:gold;color:black;border:none;border-radius:8px;font-size:18px;">
+      Book a Service
+    </button>
+  </section>
+
+  <section style="padding:20px;">
+    <h2>Popular Services</h2>
+    <ul>
+      <li>🔧 Plumber</li>
+      <li>⚡ Electrician</li>
+      <li>🧹 Cleaner</li>
+      <li>🚗 Mechanic</li>
+      <li>🎨 Painter</li>
+      <li>❄️ AC Technician</li>
+    </ul>
+  </section>
+
+  <footer style="background:black;color:white;text-align:center;padding:20px;border-top:2px solid gold;">
+    © 2026 ASTRA Connect. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
