@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Become a Professional - ASTRA Connect</title>
+</head>
+
+<body style="background:#111;color:white;font-family:Arial;padding:20px;">
+
+<h1 style="color:gold;text-align:center;">Become a Professional</h1>
+
+<p style="text-align:center;">
+Join ASTRA Connect and start receiving jobs from customers.
+</p>
+
+<input id="fullname" type="text" placeholder="Full Name" style="width:100%;padding:12px;margin:10px 0;">
+
+<input id="phone" type="tel" placeholder="Phone Number" style="width:100%;padding:12px;margin:10px 0;">
+
+<input id="location" type="text" placeholder="Location (e.g. Ikeja, Lagos)" style="width:100%;padding:12px;margin:10px 0;">
+
+<select id="profession" style="width:100%;padding:12px;margin:10px 0;">
+<option>Choose Profession</option>
+<option>Plumber</option>
+<option>Electrician</option>
+<option>Cleaner</option>
+<option>Mechanic</option>
+<option>Painter</option>
+<option>AC Technician</option>
+<option>Photographer</option>
+<option>Carpenter</option>
+</select>
+
+<textarea id="experience" placeholder="Tell us about your experience..." style="width:100%;height:120px;padding:12px;margin:10px 0;"></textarea>
+
+<button onclick="registerProfessional()" style="width:100%;padding:15px;background:gold;border:none;font-size:18px;border-radius:8px;">
+Register Now
+</button>
+
+<script>
+function registerProfessional(){
+
+let fullname=document.getElementById("fullname").value;
+let phone=document.getElementById("phone").value;
+let location=document.getElementById("location").value;
+let profession=document.getElementById("profession").value;
+let experience=document.getElementById("experience").value;
+
+let message=`*New Professional Registration*
+
+Name: ${fullname}
+Phone: ${phone}
+Location: ${location}
+Profession: ${profession}
+
+Experience:
+${experience}`;
+
+window.location.href="https://wa.me/2348116167723?text="+encodeURIComponent(message);
+
+}
+</script>
+
+</body>
+  </html>you 
