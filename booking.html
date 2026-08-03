@@ -10,36 +10,46 @@
 
 <h1 style="color:gold;">Book a Service</h1>
 
-<form>
-<p>
-<input type="text" placeholder="Full Name" style="width:90%;padding:10px;">
-</p>
+<input id="name" type="text" placeholder="Full Name" style="width:90%;padding:10px;margin:10px;"><br>
 
-<p>
-<input type="tel" placeholder="Phone Number" style="width:90%;padding:10px;">
-</p>
+<input id="phone" type="tel" placeholder="Phone Number" style="width:90%;padding:10px;margin:10px;"><br>
 
-<p>
-<select style="width:90%;padding:10px;">
-<option>Select Service</option>
+<select id="service" style="width:90%;padding:10px;margin:10px;">
 <option>Plumber</option>
 <option>Electrician</option>
 <option>Cleaner</option>
 <option>Mechanic</option>
 <option>Painter</option>
 <option>AC Technician</option>
-</select>
-</p>
+</select><br>
 
-<p>
-<textarea placeholder="Describe your problem" style="width:90%;height:120px;"></textarea>
-</p>
+<textarea id="problem" placeholder="Describe your problem" style="width:90%;height:120px;margin:10px;"></textarea><br>
 
-<button style="padding:15px 30px;background:gold;border:none;font-size:18px;">
+<button onclick="sendWhatsApp()" style="padding:15px 30px;background:gold;border:none;font-size:18px;border-radius:8px;">
 Submit Booking
 </button>
 
-</form>
+<script>
+function sendWhatsApp() {
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let service = document.getElementById("service").value;
+  let problem = document.getElementById("problem").value;
+
+  let message =
+`*New ASTRA Connect Booking*
+
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+
+Problem:
+${problem}`;
+
+  let url = "https://wa.me/2348116167723?text=" + encodeURIComponent(message);
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
-  </html>
+</html>
