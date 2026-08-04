@@ -40,6 +40,21 @@ Register Now
 </button>
 
 <script src="script.js"></script>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.0/firebase-app.js";
+import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/12.17.0/firebase-firestore.js";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyA2s_2OyEf3_3q0DUUqKwiFDhLh6f2uPPY",
+  authDomain: "astra-connect-b408d.firebaseapp.com",
+  projectId: "astra-connect-b408d",
+  storageBucket: "astra-connect-b408d.firebasestorage.app",
+  messagingSenderId: "371964195032",
+  appId: "1:371964195032:web:8bdbafc9fdde20150e67ad"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+</script>
 </body>
   </html>you 
